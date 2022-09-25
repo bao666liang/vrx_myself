@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/devel
+
+Name: wamv_description
+Description: Description of wamv_description
+Version: 1.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: xacro

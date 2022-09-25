@@ -1,0 +1,2 @@
+control_wamv:gmapping_slam:move_base_vrx:my_vrx_world:pointcloud_to_laserscan:vrx/usv_gazebo_plugins:vrx/usv_msgs:vrx/vrx_2019:vrx/vrx_gazebo:vrx/wamv_description:vrx/wamv_gazebo:vrx/wave_gazebo:vrx/wave_gazebo_plugins:yocs_velocity_smoother
+-DCATKIN_WHITELIST_PACKAGES=control_wamv -DCATKIN_DEVEL_PREFIX=/home/wanbaoliang/wamv_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wanbaoliang/wamv_ws/install -G Unix Makefiles

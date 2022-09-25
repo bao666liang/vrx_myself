@@ -1,0 +1,107 @@
+{
+	"BUILD_DIR" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/stationkeeping_scoring_plugin_autogen",
+	"CMAKE_BINARY_DIR" : "/home/wanbaoliang/wamv_ws/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/wanbaoliang/wamv_ws/src/vrx/vrx_gazebo",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/wanbaoliang/wamv_ws/src",
+	"HEADERS" : [],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/stationkeeping_scoring_plugin_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/stationkeeping_scoring_plugin_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"BOOST_ALL_NO_LIB",
+		"BOOST_ATOMIC_DYN_LINK",
+		"BOOST_DATE_TIME_DYN_LINK",
+		"BOOST_FILESYSTEM_DYN_LINK",
+		"BOOST_IOSTREAMS_DYN_LINK",
+		"BOOST_PROGRAM_OPTIONS_DYN_LINK",
+		"BOOST_REGEX_DYN_LINK",
+		"BOOST_SYSTEM_DYN_LINK",
+		"BOOST_TEST_DYN_LINK",
+		"BOOST_THREAD_DYN_LINK",
+		"LIBBULLET_VERSION=2.88",
+		"LIBBULLET_VERSION_GT_282",
+		"ROSCONSOLE_BACKEND_LOG4CXX",
+		"ROS_BUILD_SHARED_LIBS=1",
+		"ROS_PACKAGE_NAME=\"vrx_gazebo\"",
+		"stationkeeping_scoring_plugin_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/wanbaoliang/wamv_ws/devel/include",
+		"/home/wanbaoliang/wamv_ws/src/vrx/vrx_gazebo/include",
+		"/home/wanbaoliang/wamv_ws/src/vrx/usv_gazebo_plugins/include",
+		"/home/wanbaoliang/wamv_ws/src/vrx/wave_gazebo_plugins/include",
+		"/opt/ros/noetic/include",
+		"/opt/ros/noetic/include/xmlrpcpp",
+		"/usr/include/gazebo-11",
+		"/usr/include/bullet",
+		"/usr/include/sdformat-9.8",
+		"/usr/include/OGRE",
+		"/usr/include/OGRE/Terrain",
+		"/usr/include/OGRE/Paging",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/msgs",
+		"/usr/include/simbody",
+		"/usr/include/ignition/math6",
+		"/usr/include/ignition/transport8",
+		"/usr/include/ignition/msgs5",
+		"/usr/include/ignition/common3",
+		"/usr/include/ignition/fuel_tools4",
+		"/usr/include/eigen3",
+		"/usr/include/sdformat-9.8",
+		"/usr/include/ignition/cmake2",
+		"/usr/include/uuid",
+		"/usr/include",
+		"/usr/include/c++/9",
+		"/usr/include/x86_64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/9/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/stationkeeping_scoring_plugin_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/CMakeFiles/stationkeeping_scoring_plugin_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/home/wanbaoliang/wamv_ws/build/vrx/vrx_gazebo/CMakeFiles/stationkeeping_scoring_plugin_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/wanbaoliang/wamv_ws/src/vrx/vrx_gazebo/src/stationkeeping_scoring_plugin.cc",
+			"MU"
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

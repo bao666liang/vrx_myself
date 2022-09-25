@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/devel
+
+Name: gmapping_slam
+Description: Description of gmapping_slam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

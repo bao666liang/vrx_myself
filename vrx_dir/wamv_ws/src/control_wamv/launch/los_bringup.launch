@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="use_sim_time" value="false"/>
+
+    <!-- <arg name="rviz_config" default="$(find bringup)/rviz/simulation.rviz" />
+    <node pkg="rviz" type="rviz" name="wamv_visualization" args="-d $(arg rviz_config)" /> -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="tf_map2odom" args="0 0 0 0 0 0  map /wamv/odom 100"/> -->
+    <include file="$(find gmapping_slam)/launch/gmapping.launch"/>
+    <!-- <include file="$(find control_wamv)/launch/los_rviz.launch"/> -->
+    
+    <!-- <include file="$(find move_base_vrx)/launch/planning.launch"/> -->
+    <include file="$(find vrx_gazebo)/launch/myvrx.launch"/>
+
+    <include file="$(find move_base_vrx)/launch/planning.launch"/>
+    
+    <!-- <include file="$(find yocs_velocity_smoother)/launch/standalone.launch"/> -->
+    
+    <!-- <arg name="rviz_config" default="$(find wamv_gazebo)/config/rviz_vrx.rviz" />
+    <node pkg="rviz" type="rviz" name="wamv_visualization" args="-d $(arg rviz_config)" /> -->
+    <node name="vel_thrust" pkg="control_wamv" type="vel_thrust" />
+    <!-- 控制节点在这一起启动，ow/odom有时启动顺序不同会起冲突！！ -->
+    <node name="controller_node" pkg="control_wamv" type="pathFollowing" />
+
+
+
+</launch>
+
+

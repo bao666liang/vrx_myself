@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/devel
+
+Name: vrx_2019
+Description: Description of vrx_2019
+Version: 1.5.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: vrx_gazebo wamv_gazebo xacro

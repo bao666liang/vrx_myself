@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/devel
+
+Name: pointcloud_to_laserscan
+Description: Description of pointcloud_to_laserscan
+Version: 1.4.1
+Cflags: -I/home/wanbaoliang/wamv_ws/src/pointcloud_to_laserscan/include
+Libs: -L${prefix}/lib -llaserscan_to_pointcloud -lpointcloud_to_laserscan
+Requires: laser_geometry message_filters nodelet roscpp sensor_msgs tf2 tf2_ros tf2_sensor_msgs

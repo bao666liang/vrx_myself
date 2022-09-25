@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- 直接用launch运行节点加载参数不会打印节点信息：rosinfo/printf 一起启动的话输入为0，pid控制船会一直旋转，应该后启动该节点-->
+    <!-- 如果给船右弦推力，船会逆时针旋转，odom.angle.z为正，船在odom系下的合速度为旋转方向，-->
+    <!-- 分解到船自身右手坐标系后liner.x为正，liner.y为负！！！！  -->
+    <!-- wz一直不变号则船会一直朝一个方向转向，最后会导致转圈，因此liner.y也会跟着飞，和规划频率有很大关系，但这会报警warning-->
+
+    <!-- <node name="control_pid" pkg="control_wamv" type="control_wamv" args="1.0 0.5 1.0 0.5 0.0 0.0" /> -->
+    <!-- <include file="$(find gmapping_slam)/launch/gmapping.launch"/> -->
+    <include file="$(find gmapping_slam)/launch/vrx_map2_rviz.launch"/>
+
+    <!--规划不出路径(一般是局部参数规划的不合理)或机器人振荡(一启动船为啥自己会上下荡 ??看plot)或碰撞会进入恢复状态，宕机 -->
+    <!--船为啥自己会上下荡的表现：：liner.x在振荡，还有liner.y和angle.y一直不为0-->
+    <!--将cmd_vel平滑了跑着跑着liner.x又振荡了？？用增量pid？？直接把liner.x给1，但liner.y也得控制住，不然左右荡 -->
+    <include file="$(find move_base_vrx)/launch/planning.launch"/>
+    <include file="$(find vrx_gazebo)/launch/myvrx.launch"/>
+    <include file="$(find yocs_velocity_smoother)/launch/standalone.launch"/>
+    <!-- <arg name="rviz_config" default="$(find wamv_gazebo)/config/rviz_vrx.rviz" />
+    <node pkg="rviz" type="rviz" name="wamv_visualization" args="-d $(arg rviz_config)" /> -->
+
+</launch>

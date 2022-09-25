@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/install
+
+Name: wave_gazebo_plugins
+Description: Description of wave_gazebo_plugins
+Version: 1.3.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lHydrodynamics -lWavefieldModelPlugin -lWavefieldVisualPlugin -lwavegauge_plugin
+Requires: gazebo_ros

@@ -1,0 +1,8 @@
+prefix=/home/wanbaoliang/wamv_ws/devel
+
+Name: pkg_nav
+Description: Description of pkg_nav
+Version: 0.0.0
+Cflags: -I/home/wanbaoliang/wamv_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs actionlib actionlib_msgs message_runtime nav_msgs geometry_msgs tf autoware_msgs

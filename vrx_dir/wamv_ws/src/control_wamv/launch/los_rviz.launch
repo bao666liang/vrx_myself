@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- Example of launch rviz with a custom rviz config to have selected topics preloaded -->
+<launch>
+  <arg name="rviz_config" default="$(find wamv_gazebo)/config/rviz_vrx.rviz" />
+  <node pkg="rviz" type="rviz" name="wamv_visualization" args="-d $(arg rviz_config)" />
+
+
+ 
+  <node pkg="tf" type="static_transform_publisher" name="map_odom" args="742 -28 0 0 0 0 /map /wamv/odom 10" /> 
+
+  <!-- Map server -->
+  <!-- <arg name="map" default="robotx_example_course.yaml" /> -->
+  <!-- <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>   -->
+  <arg name="map" default="robotx_example2.yaml" />
+  <!-- 运行地图服务器，并且加载设置的地图  全局和局部都用的同一个大湖地图，规划也是根据这个来的，不准确！！！-->
+  <!-- <remap from="/map" to="/ow/global_map"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find gmapping_slam)/map/$(arg map)"/>
+  <remap from="/map" to="/ow/local_map"/>-->
+  <!-- <node name="map_server1" pkg="map_server" type="map_server" args="$(find gmapping_slam)/map/$(arg map)"/>  -->
+  <node name="map_server1" pkg="map_server" type="map_server" args="$(find gmapping_slam)/map/$(arg map)"/> 
+
+
+  <include file="$(find pointcloud_to_laserscan)/launch/sample_node.launch">
+  </include>
+
+    
+</launch>

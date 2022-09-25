@@ -1,0 +1,16 @@
+# Define the goal
+geometry_msgs/PoseStamped start_pose
+geometry_msgs/PoseStamped goal_pose
+geometry_msgs/PoseStamped[] goalPoseV1
+int32 num  #test -cyb
+
+---
+# Define the result
+int8  runResult  # #  -1：处理失败  0 : 未处理     1：正在处理   2：处理完成  
+int32 result #test -cyb
+nav_msgs/Path smoothPath  
+nav_msgs/Path rawPath  
+---
+# Define a feedback message 
+float64 percent_complete  # [0-1]   处理进度 
+float64 progress_bar  #test -cyb

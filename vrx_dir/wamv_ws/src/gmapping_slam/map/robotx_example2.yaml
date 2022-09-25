@@ -1,0 +1,12 @@
+
+image: /home/wanbaoliang/wamv_ws/src/gmapping_slam/map/robotx_example2.pgm
+#resolution: 1.1800
+resolution: 0.200
+#actullay 0.2m but rviz display decreasing as 5.9 bei
+#origin: [-51.224998, -51.224998, 0.000000]
+origin: [0.0, 0.0, 0.0]
+#origin: [-51.224998, -51.224998, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

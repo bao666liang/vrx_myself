@@ -1,0 +1,15 @@
+# Define the goal
+int32 num
+---
+# Define the result
+int32 result
+---
+# Define a feedback message 
+float64 progress_bar
+
+# goal：任务目标
+# cancel：请求取消任务
+
+# status：通知client当前的状态
+# feedback：周期反馈任务运行的监控数据
+# result：向client发送任务的执行结果，这个topic只会发布一次。
